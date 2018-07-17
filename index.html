@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST-TASK</title>
+	<script src="./dist/bundle.js"></script>
+</head>
+<body>
+	<div id="content">
+		<h2>Programming languages</h2>
+		<div id="languages">
+			<div class="languages-head">
+				<div class="head-conter">Records all: <span id="count-items">2</span></div>
+				<div class="head-addBtn">
+					<input type="button" id="btn-addLanguage" value="Add language">
+				</div>
+			</div>
+			<div class="languages-body">
+				<table id="languages-table">
+					<thead>
+						<th>Name</th>
+						<th>Release Year</th>
+						<th>Designer</th>
+						<th>Website</th>
+						<th>Edit</th>
+						<th>Delete</th>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="modal-window-container">
+		<div class="modal-window-bg"></div>
+		<div class="modal-window-inner">
+			<div class="modal-window-block">
+				<div class="modal-window-head">
+					<div class="head-title">New language</div>
+					<div class="head-closeBtn">x</div>
+				</div>
+				<div class="modal-window-body">
+					<form action="javascript://" id="language-form">
+						<input type="hidden" name="action" value="add">
+						<input type="hidden" name="id" value="">
+						<div class="fblock-row" data-name="name">
+							<label>Name:</label>
+							<input name="name" type="text" placeholder="Enter name" required>
+						</div>
+						<div class="fblock-row" data-name="releaseYear">
+							<label>Release year:</label>
+							<input name="releaseYear" type="text" placeholder="Enter release year" required>
+						</div>
+						<div class="fblock-row" data-name="designer">
+							<label>Designer:</label>
+							<input name="designer" type="text" placeholder="Enter designer" required>
+						</div>
+						<div class="fblock-row" data-name="website">
+							<label>Website:</label>
+							<input name="website" type="text" placeholder="Enter website" required>
+						</div>
+						<div class="fblock-error"></div>
+						<div class="fblock-btns">
+							<input type="submit" class="btn-submit" value="OK">
+							<input type="button" class="btn-cancel" value="Cancel">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

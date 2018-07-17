@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Roboto';}
+input[type="button"] {cursor: pointer;}
+
+/*FORM*/
+form {}
+form .fblock-row {margin-bottom: 15px;}
+form .fblock-row label {display: block; font-size: 13px; line-height: 18px; position: relative;}
+form .fblock-row label:after {content: attr(data-error); font-weight: bold; color: #ff0000; position: absolute; right: 0;}
+form .fblock-row input {width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 2px;}
+form .fblock-error {font-weight: bold; color: #ff0000;}
+form .fblock-btns {text-align: right;}
+form .fblock-btns input {padding: 5px 10px; width: 100px; margin-left: 5px;}
+
+/*MODAL WINDOW*/
+.modal-window-container {position: fixed; left: 0; right: 0; bottom: 0; top: 0; display: none;}
+.modal-window-bg {background: #000; opacity: 0.8; position: fixed; left: 0; right: 0; bottom: 0; top: 0; z-index: 9998;}
+.modal-window-inner {width: 100%; height: 100%; display: flex; align-items: center; position: relative; z-index: 9999;}
+.modal-window-block {width: 600px; margin: 0 auto; background: #fff; border-radius: 2px; border: 1px solid #ccc; box-shadow: 0 0 5px #000;}
+.modal-window-head {padding: 10px; background: #f7f7f7; text-align: center; border-bottom: 1px solid #ccc; position: relative;}
+.modal-window-head .head-closeBtn {position: absolute; right: 10px; top: 10px; padding: 0 5px; font-weight: bold; color: #b3b3b3; cursor: pointer;}
+.modal-window-head .head-closeBtn:hover {color: #313131;}
+.modal-window-body {padding: 15px;}
+
+/*CONTENT*/
+#content {width: 960px; margin: 70px auto;}
+#content h2 {text-align: center;}
+
+.languages-head {display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin: 15px 0;}
+.languages-head .head-addBtn input {padding: 10px;}
+
+#languages {display: none;}
+#languages-table {border-collapse: collapse; width: 100%;}
+#languages-table th {padding: 25px; font-weight: bold; text-align: center; border: 1px solid #000;}
+#languages-table td {padding: 25px; text-align: center; border: 1px solid #000;}
+#languages-table input {width: 100px; padding: 5px;}
