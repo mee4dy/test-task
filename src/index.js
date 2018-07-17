@@ -2,7 +2,8 @@ import './style.scss'
 
 var modal = {
 	open: function(){
-		$('.modal-window-container').fadeIn(300);
+		$('.modal-window-body').find('label[data-error]').attr('data-error', '')
+		$('.modal-window-container').fadeIn(300); 
 	},
 	close: function(){
 		$('.modal-window-container').fadeOut(300);
