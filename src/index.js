@@ -88,15 +88,9 @@ $(function(){
 	})
 
 	//скрыть окно
-	$('.btn-cancel, .head-closeBtn').on('click', function(){
+	$('.btn-cancel, .head-closeBtn, .modal-window-bg').on('click', function(){
 		modal.close()
 	});
-
-	$(document).mouseup(function(e) {
-	    var container = $(".modal-window-body");
-		if(!container.is(e.target) && container.has(e.target).length === 0) modal.close()
-	});
-	//скрыть окно
 
 	//add new
 	$languageForm.on('submit', function(){
